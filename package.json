@@ -1,17 +1,27 @@
 {
-  "name": "frontend",
+  "name": "sena-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "tailwindcss build -i ./src/style.css -o ./dist/style.css"
+    "build": "tailwindcss build -i ./src/style.css -o ./dist/style.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Manjlo",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.7",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17"
-  }
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manjlo/sena-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Manjlo/sena-project/issues"
+  },
+  "homepage": "https://github.com/Manjlo/sena-project#readme",
+  "description": ""
 }
