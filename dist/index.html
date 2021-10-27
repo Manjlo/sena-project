@@ -9,48 +9,137 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-	<div class="header">
-		<nav class="bg-white shadow-lg">
-			<div class="max-w-6xl mx-auto px-4">
-				<div class="flex justify-between">
-					<div class="flex space-x-7">
-						<div>
-							<a href="#" class="flex items-center py-4 px-2">
-								<img src="../Multimedia/icono90x75.png" alt="Logo"
-									class="h-15 w-20 mr-2" />
-								<span class="font-normal text-gray-500 text-lg"></span>
-							</a>
-						</div>
-						<div class="hidden md:flex items-center space-x-1">
-							<a href="index.html"
-								class="py-4 px-2 text-yellow-500 border-b-4 border-yellow-500 font-normal  ">Home</a>
-							<a href="#"
-								class=" py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 transform hover:scale-105">Membership</a>
-							<a href="#"
-								class="py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 transform hover:scale-105">Tours
-								list</a>
-							<a href="#"
-								class="py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 transform hover:scale-105">Pages</a>
-							<a href="#"
-								class="py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 transform hover:scale-105">About</a>
-						</div>
+<body class=" block">
+	<!--Navbar-->
+	<nav class="bg-white shadow-lg fixed w-full z-50">
+		<div class="max-w-6xl mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="flex space-x-7">
+					<!--Logo-->
+					<div>
+						<a href="#" class="flex items-center py-4 px-2">
+							<img src="../Multimedia/icono90x75.png" alt="Logo"
+								class="md:h-12 md:w-17 h-10 w-14 mr-2" />
+							<span
+								class="md:hidden font-medium text-gray-500 text-lg">Expertravel</span>
+						</a>
 					</div>
-					<div class="secundary-items hidden md:flex items-center space-x-3">
+					<!--First Content Menu-->
+					<div class="hidden md:flex items-center space-x-1">
+						<a href="index.html"
+							class="py-4 px-2 text-yellow-500 border-b-4 border-yellow-500 font-normal  ">Home</a>
 						<a href="#"
-							class="py-2 px-2 font-medium text-gray-600 rounded hover:bg-yellow-500 hover:text-white transition duration-300">Log
-							In</a>
-						<a href="#" class="py-2 px-2 font-medium text-white bg-blue-500 rounded transform hover:scale-110 hover:text-white transition duration-300">Sign Up</a>
-
+							class=" py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 ">Membership</a>
+						<a href="#"
+							class="py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 ">Tours
+							list</a>
+						<a href="#"
+							class="py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300">Pages</a>
+						<a href="#"
+							class="py-4 px-2 text-gray-600 font-medium hover:text-yellow-500 transition duration-300 ">About</a>
 					</div>
+				</div>
+				<!--Second Content Menu-->
+				<div class="secundary-items hidden md:flex items-center space-x-3">
+					<a href="#"
+						class="py-2 px-2 font-medium text-gray-600 rounded hover:bg-yellow-500 hover:text-white transition duration-300">Log
+						In</a>
+					<a href="#"
+						class="py-2 px-2 font-medium text-white bg-blue-500 rounded transform hover:scale-110 hover:text-white transition duration-300">Sign
+						Up</a>
 
 				</div>
+				<!--Menu icon-->
+				<div class="md:hidden flex items-center">
+					<button class="outline-none mobile-menu-button">
+						<div class="icon-menu">
+							<svg class="menu-hamburger w-6 h-6 hover:text-yellow-500 transform hover:scale-110"
+								x-show="!showMenu" fill="none" stroke-linecap="round"
+								stroke-linejoin="round" stroke-width="2"
+								viewBox="0 0 24 24" stroke="currentColor">
+								<path d="M4 6h16M4 12h16M4 18h16"></path>
+							</svg>
+
+						</div>
+					</button>
+				</div>
+
 
 			</div>
-		</nav>
-		<div class="imagen-content"></div>
-		<div class="search"></div>
-		<div class="banner-content">
+
+		</div>
+		<!--Content Mobile Menu-->
+		<div class="mobile-menu hidden">
+			<ul class="items-center content-center">
+				<li class="text-sm px-2 py-4 flex justify-center text-white bg-blue-500 font-semibold">
+					Home
+				</li flex justify-center>
+				<li class="text-sm px-2 py-4 flex justify-center transition duration-300">
+					Membership
+				</li flex justify-center>
+				<li class="text-sm px-2 py-4 flex justify-center transition duration-300">Tour
+					List
+				</li flex justify-center>
+				<li class="text-sm px-2 py-4 flex justify-center transition duration-300">Pages
+				</li>
+				<li class=" text-sm px-2 py-4 flex justify-center transition duration-300">About
+				</li>
+			</ul>
+		</div>
+		<!--Toggle Script for the mobile menu-->
+		<script>
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
+			const svg = document.querySelector(".menu-hamburguer")
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden")
+			})
+		</script>
+	</nav>
+
+	<!--First Section-->
+	<div class="header">
+		<div class="w-screen h-screen bg-cover bg-center flex items-center justify-center"
+			style="background-image: url('../Multimedia/images/boat-4899802_1920.jpg');">
+			<div class="searcher z-10">
+				<h1
+					class="md:text-5xl text-4xl m-0 text-white shadow-xl font-medium flex items-center text-center">
+					Find your next place to visit
+				</h1>
+				<div class="container my-4 flex items-center justify-center">
+					<form action="GET"
+						class="grid md:grid-cols-4 grid-cols-1 gap-1 justify-center items-center">
+						<div id="Keyword"
+							class="">
+							<input type="text" placeholder="Keywords"
+								class="flex justify-center items-center text-center md:h-14 h-14 w-64 md:w-36">
+						</div>
+						<div id="Destination"
+							class="">
+							<input type="text" placeholder="Destination" class="bg-white flex justify-center items-center text-center md:h-14 h-14 w-64 md:w-36">
+						</div>
+						<div id="Duration"
+							class="4">
+
+							<input type="text" placeholder="Duration" class="flex justify-center items-center text-center md:h-14 h-14 w-64 md:w-36">
+						</div>
+						<div id=""
+							class="btn">
+							<input type="submit" value="Search"
+								class="bg-yellow-500 text-white cursor-pointer md:h-14 h-14 w-64 md:w-36"> 
+								
+						</div>
+					</form>
+					<script>
+						const boton = document.querySelector('.btn');
+
+						boton.addEventListener('click', (e)=>{
+							e.preventDefault()
+						})
+						
+					</script>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="content">
