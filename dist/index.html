@@ -103,46 +103,39 @@
 			style="background-image: url('../Multimedia/images/boat-4899802_1920.jpg');">
 			<div class="searcher z-10">
 				<h1
-					class="md:text-5xl text-4xl m-0 text-white shadow-xl font-medium flex items-center text-center">
+					class="md:text-5xl text-4xl shadow m-3 text-white font-medium flex items-center text-center">
 					Find your next place to visit
 				</h1>
 				<div class="container my-4 flex items-center justify-center">
 					<form action="GET"
 						class="grid md:grid-cols-4 grid-cols-1 gap-1 justify-center items-center">
-						<div id="Keyword"
-							class="">
+						<div id="Keyword" class="">
 							<input type="text" placeholder="Keywords"
-								class="flex justify-center items-center text-center md:h-14 h-14 w-64 md:w-36">
+								class="flex justify-center items-center text-center text-gray-600 bg-white rounded-sm md:h-14 h-14 w-64 md:w-36
+								 focus:bg-opacity-10 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
 						</div>
-						<div id="Destination"
-							class="">
-							<input type="text" placeholder="Destination" class="bg-white flex justify-center items-center text-center md:h-14 h-14 w-64 md:w-36">
+						<div id="Destination" class="">
+							<input type="text" placeholder="Destination"
+								class="bg-white  text-gray-600 flex justify-center items-center rounded-sm text-center md:h-14 h-14 w-64 md:w-36 
+								focus:bg-opacity-10 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
 						</div>
-						<div id="Duration"
-							class="4">
+						<div id="Duration" class="">
 
-							<input type="text" placeholder="Duration" class="flex justify-center items-center text-center md:h-14 h-14 w-64 md:w-36">
+							<input type="text" placeholder="Duration"
+								class="bg-white text-gray-600 flex justify-center items-center rounded-sm text-center md:h-14 h-14 w-64 md:w-36 border border-transparent 
+								focus:bg-opacity-10 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
 						</div>
-						<div id=""
-							class="btn">
-							<input type="submit" value="Search"
-								class="bg-yellow-500 text-white cursor-pointer md:h-14 h-14 w-64 md:w-36"> 
-								
+						<div id="" class="btn">
+							<input type="reset" value="Search" class=" bg-gradient-to-r to-yellow-500 rounded-sm from-yellow-400 transition duration-300
+								 hover:from-yellow-500 hover:to-yellow-400 text-white cursor-pointer md:h-14 h-14 w-64 md:w-36">
 						</div>
 					</form>
-					<script>
-						const boton = document.querySelector('.btn');
-
-						boton.addEventListener('click', (e)=>{
-							e.preventDefault()
-						})
-						
-					</script>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="content">
+
 
 	</div>
 	<div class="footer"></div>
