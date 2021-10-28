@@ -9,9 +9,10 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body class=" block">
+<body class="overflow-x-hidden">
+	
 	<!--Navbar-->
-	<nav class="bg-white shadow-lg fixed w-full z-50">
+	<nav class="bg-white shadow-lg fixed w-screen z-50">
 		<div class="max-w-6xl mx-auto px-4">
 			<div class="flex justify-between">
 				<div class="flex space-x-7">
@@ -97,10 +98,11 @@
 		</script>
 	</nav>
 
-	<!--First Section-->
+	<!--Header-->
 	<div class="header">
 		<div class="w-screen h-screen bg-cover bg-center flex items-center justify-center"
 			style="background-image: url('../Multimedia/images/boat-4899802_1920.jpg');">
+			<!--Searcher-->
 			<div class="searcher z-10">
 				<h1
 					class="md:text-5xl text-4xl shadow m-3 text-white font-medium flex items-center text-center">
@@ -112,18 +114,18 @@
 						<div id="Keyword" class="">
 							<input type="text" placeholder="Keywords"
 								class="flex justify-center items-center text-center text-gray-600 bg-white rounded-sm md:h-14 h-14 w-64 md:w-36
-								 focus:bg-opacity-10 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
+								 focus:bg-opacity-20 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
 						</div>
 						<div id="Destination" class="">
 							<input type="text" placeholder="Destination"
 								class="bg-white  text-gray-600 flex justify-center items-center rounded-sm text-center md:h-14 h-14 w-64 md:w-36 
-								focus:bg-opacity-10 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
+								focus:bg-opacity-20 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
 						</div>
 						<div id="Duration" class="">
 
 							<input type="text" placeholder="Duration"
 								class="bg-white text-gray-600 flex justify-center items-center rounded-sm text-center md:h-14 h-14 w-64 md:w-36 border border-transparent 
-								focus:bg-opacity-10 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
+								focus:bg-opacity-20 focus:placeholder-transparent focus:text-white focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent">
 						</div>
 						<div id="" class="btn">
 							<input type="reset" value="Search" class=" bg-gradient-to-r to-yellow-500 rounded-sm from-yellow-400 transition duration-300
@@ -134,10 +136,319 @@
 			</div>
 		</div>
 	</div>
-	<div class="content">
 
+	<!--Content-->
+	<div class="content bg-gray-100">
 
+		<!--Banner Info-->
+		<div class="flex justify-center items-center w-screen">
+			<div
+				class="md:-my-12 info-banner xl:max-w-6xl md:max-w-3xl w-screen grid md:grid-cols-3 grid-cols-1 bg-gradient-to-t from-blue-500 to-blue-300">
+				<!--First box -->
+				<div
+					class=" border xl:w-96 md:h-44 md:w-64 md:grid md:grid-cols-4 items-center justify-center p-4">
+					<div class="icon-banner flex items-center justify-center md:m-0 my-2">
+						<img src="../Multimedia/Icons/tvicon1.1.png" alt="icon1">
+					</div>
+					<div class="col-span-3 mr-2 md:block flex items-center justify-center">
+						<div>
+							<h3
+								class="text-white font-semibold font-mono md:block flex items-center justify-center m-2 md:m-0 my-2 xl:text-base md:text-sm">
+								Especial Places
+							</h3>
+							<p
+								class="text-white font-medium m-2 md:m-0 text-center md:text-left xl:text-base md:text-sm">
+								The best expert group selected the
+								places showed in this site
+							</p>
+						</div>
+
+					</div>
+				</div>
+				<!--Second box -->
+				<div
+					class=" border xl:w-96 md:h-44 md:w-64 md:grid md:grid-cols-4 items-center justify-center p-4">
+					<div class="icon-banner flex items-center justify-center md:m-0 my-2">
+						<img src="../Multimedia/Icons/tvicon2.1.png" alt="icon2">
+					</div>
+					<div class="col-span-3 mr-2 md:block flex items-center justify-center ">
+						<div>
+							<h3
+								class="text-white font-semibold font-mono md:block flex items-center justify-center m-2 md:m-0 my-2 mr-3 xl:text-base md:text-sm">
+								Best Prices
+							</h3>
+							<p
+								class="text-white font-medium m-2 md:m-0 text-center md:text-left xl:text-base md:text-sm">
+								The best guarenteed prices
+							</p>
+						</div>
+
+					</div>
+				</div>
+				<!--Third box -->
+				<div
+					class=" border xl:w-96 md:h-44 md:w-64 items-center justify-center md:grid md:grid-cols-4 p-4 ">
+					<div class="icon-banner flex items-center justify-center md:m-0 my-2">
+						<img src="../Multimedia/Icons/tvicon3.png" alt="icon3">
+					</div>
+					<div class="col-span-3 md:mr-3 mr-0 md:block flex items-center justify-center">
+						<div>
+							<h3
+								class="text-white font-semibold font-mono md:block flex items-center justify-center m-2 md:m-0 my-2 xl:text-base md:text-xs">
+								Referral System</h3>
+							<p
+								class="text-white font-medium m-2 md:m-0 text-center md:text-left xl:text-base md:text-xs">
+								A system that allows you to obtain incredible benefits
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--Popular Tours Section-->
+		<div class="">
+			<!--Title Section-->
+			<div class="popular-tours-title flex justify-center my-36">
+				<div class="title-section">
+					<h2 class=" capitalize text-3xl text-center font-medium font-mono">popular tours
+					</h2>
+					<div class="-my-9">
+						<span class="text-7xl opacity-10 text-center font-medium">Popular</span>
+					</div>
+				</div>
+			</div>
+			<!--Popular Tours Cards-->
+			<div class="flex justify-center items-center ">
+				<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 ">
+					<!--Card 1-->
+					<div
+						class=" h-96 w-72 bg-white rounded-2xl shadow-lg transition duration-300 transform hover:scale-105">
+						<div class="h-52 bg-cover rounded-t-2xl cursor-pointer"
+							style="background-image: url('../Multimedia/images/shutterstock_647526577.jpg');">
+
+						</div>
+						<div class="card-content">
+							<div class=" h-9 w-28 rounded bg-yellow-500 flex items-center text-center justify-center
+							 ml-3 -my-3 text-white">
+								Best Seller
+							</div>
+							<div class="flex justify-center m-5 mb-0">
+								<div class="grid grid-cols-5 items-center">
+									<div class="mr-1">
+										<img src="../Multimedia/Icons/icons-card/tvicon1.1.png"
+											class="h-6" />
+									</div>
+									<div class=" col-span-4">
+										<h4 class="text-gray-600 text-sm">
+											Moscow, Rusia
+											<span class="text-gray-900">
+												7 Days
+											</span>
+											and
+											<span class=" text-gray-900">
+												6 Nights.
+											</span>
+										</h4>
+									</div>
+								</div>
+
+							</div>
+							<div class="ml-5 mt-3 mb-0">
+								<div class="grid grid-cols-5 items-center">
+									<div class="">
+										<img src="../Multimedia/Icons/icons-card/icons8-clock-64.png"
+											class="h-7" alt="">
+									</div>
+									<div class="col-span-4">
+										<h4
+											class="text-gray-600 text-sm text-left">
+											7 Days</h4>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="m-5">
+								<div class="grid grid-cols-8 ">
+									<div class="flex col-span-4">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+									</div>
+									<div class=""></div>
+									<div class="col-span-2">
+										<h4 class="text-gray-700">
+											$1'400.000</h4>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<!--Card 2-->
+					<div
+						class=" h-96 w-72 bg-white rounded-2xl shadow-lg transition duration-300 transform hover:scale-105">
+						<div class="h-52 bg-cover bg-center rounded-t-2xl cursor-pointer"
+							style="background-image: url('../Multimedia/images/paris-1836415_1920.jpg');">
+
+						</div>
+						<div class="card-content">
+							<div class=" h-9 w-28 rounded bg-yellow-500 flex items-center text-center justify-center
+							 ml-3 -my-3 text-white">
+								Best Seller
+							</div>
+							<div class="flex justify-center m-5 mb-0">
+								<div class="grid grid-cols-5 items-center">
+									<div class="mr-1">
+										<img src="../Multimedia/Icons/icons-card/tvicon1.1.png"
+											class="h-6" />
+									</div>
+									<div class=" col-span-4">
+										<h4 class="text-gray-600 text-sm">
+											Paris, France
+											<span class="text-gray-900">
+												4 Days
+											</span>
+											and
+											<span class=" text-gray-900">
+												5 Nights.
+											</span>
+										</h4>
+									</div>
+								</div>
+
+							</div>
+							<div class="ml-5 mt-3 mb-0">
+								<div class="grid grid-cols-5 items-center">
+									<div class="">
+										<img src="../Multimedia/Icons/icons-card/icons8-clock-64.png"
+											class="h-7" alt="">
+									</div>
+									<div class="col-span-4">
+										<h4
+											class="text-gray-600 text-sm text-left">
+											4 Days</h4>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="m-5">
+								<div class="grid grid-cols-8 ">
+									<div class="flex col-span-4">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+									</div>
+									<div></div>
+									<div class=" col-span-2">
+										<h4 class="text-gray-700">
+											$3'200.000
+										</h4>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<!--Card 3-->
+					<div
+						class=" h-96 w-72 bg-white rounded-2xl shadow-lg transition duration-300 transform hover:scale-105">
+
+						<div class="h-52 bg-cover rounded-t-2xl cursor-pointer"
+							style="background-image: url('../Multimedia/images/canal-1209808_1920.jpg');">
+						</div>
+						<div class="card-content">
+
+							<div class="flex justify-center m-5 my-8 mb-0">
+								<div class="grid grid-cols-5 items-center">
+									<div class="mr-1">
+										<img src="../Multimedia/Icons/icons-card/tvicon1.1.png"
+											class="h-6" />
+									</div>
+									<div class=" col-span-4">
+										<h4 class="text-gray-600 text-sm">
+											Venice, Italy
+											<span class="text-gray-900">
+												8 Days
+											</span>
+											and
+											<span class=" text-gray-900">
+												7 Nights.
+											</span>
+										</h4>
+									</div>
+								</div>
+
+							</div>
+							<div class="ml-5 mt-3 mb-0">
+								<div class="grid grid-cols-5 items-center">
+									<div class="">
+										<img src="../Multimedia/Icons/icons-card/icons8-clock-64.png"
+											class="h-7" alt="">
+									</div>
+									<div class="col-span-4">
+										<h4
+											class="text-gray-600 text-sm text-left">
+											8 Days</h4>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="m-5">
+								<div class="grid grid-cols-8 ">
+									<div class="flex col-span-4">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/llena.png"
+											class=" h-5" alt="">
+										<img src="../Multimedia/Icons/icons-card/star -vacia.png"
+											class=" h-5" alt="">
+									</div>
+									<div></div>
+									<div class="col-span-2">
+										<h4 class="text-gray-700 text-right">
+											$4'000.000</h4>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class=" h-96"></div>
 	</div>
+
 	<div class="footer"></div>
 
 
