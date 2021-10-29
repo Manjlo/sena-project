@@ -10,7 +10,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-	
+
 	<!--Navbar-->
 	<nav class="bg-white shadow-lg fixed w-screen z-50">
 		<div class="max-w-6xl mx-auto px-4">
@@ -143,10 +143,10 @@
 		<!--Banner Info-->
 		<div class="flex justify-center items-center w-screen">
 			<div
-				class="md:-my-12 info-banner xl:max-w-6xl md:max-w-3xl w-screen grid md:grid-cols-3 grid-cols-1 bg-gradient-to-t from-blue-500 to-blue-300">
+				class="md:-my-12 info-banner xl:max-w-6xl md:max-w-3xl w-screen grid sm:grid-cols-3 grid-cols-1 bg-gradient-to-t from-blue-500 to-blue-300 sm:rounded-xl shadow-lg">
 				<!--First box -->
 				<div
-					class=" border xl:w-96 md:h-44 md:w-64 md:grid md:grid-cols-4 items-center justify-center p-4">
+					class="xl:w-96 md:h-44 md:w-64 md:grid md:grid-cols-4 items-center justify-center p-4">
 					<div class="icon-banner flex items-center justify-center md:m-0 my-2">
 						<img src="../Multimedia/Icons/tvicon1.1.png" alt="icon1">
 					</div>
@@ -167,7 +167,7 @@
 				</div>
 				<!--Second box -->
 				<div
-					class=" border xl:w-96 md:h-44 md:w-64 md:grid md:grid-cols-4 items-center justify-center p-4">
+					class="border-r border-l xl:w-96 md:h-44 md:w-64 md:grid md:grid-cols-4 items-center justify-center p-4">
 					<div class="icon-banner flex items-center justify-center md:m-0 my-2">
 						<img src="../Multimedia/Icons/tvicon2.1.png" alt="icon2">
 					</div>
@@ -187,7 +187,7 @@
 				</div>
 				<!--Third box -->
 				<div
-					class=" border xl:w-96 md:h-44 md:w-64 items-center justify-center md:grid md:grid-cols-4 p-4 ">
+					class=" xl:w-96 md:h-44 md:w-64 items-center justify-center md:grid md:grid-cols-4 p-4 ">
 					<div class="icon-banner flex items-center justify-center md:m-0 my-2">
 						<img src="../Multimedia/Icons/tvicon3.png" alt="icon3">
 					</div>
@@ -221,8 +221,8 @@
 				</div>
 			</div>
 			<!--Popular Tours Cards-->
-			<div class="flex justify-center items-center ">
-				<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 ">
+			<div class="flex justify-center items-center">
+				<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 mb-48">
 					<!--Card 1-->
 					<div
 						class=" h-96 w-72 bg-white rounded-2xl shadow-lg transition duration-300 transform hover:scale-105">
@@ -446,10 +446,110 @@
 			</div>
 		</div>
 
-		<div class=" h-96"></div>
 	</div>
 
-	<div class="footer"></div>
+	<div class="footer w-screen flex items-center justify-center" style="background-color:#222222;">
+		<div class="m-10">
+			<div class="flex justify-center items-start">
+				<div class="h-52 sm:grid grid-cols-5 md:gap-10">
+					<div class="col-span-3 flex items-start justify-center">
+						<div class="">
+							<h3 class="text-white my-4 justify-center text-center">Sing Up
+								for
+								Expertravel Offers </h3>
+							<form action="PUT" class="flex items-center justify-center">
+								<div class="grid grid-cols-3">
+									<input type="email"
+										class="h-10 w-full rounded-l col-span-2 text-center"
+										placeholder="example@email.com">
+									<input type="submit" value="Send"
+										class=" rounded-r w-full bg-blue-500 text-white cursor-pointer">
+								</div>
+
+
+							</form>
+						</div>
+
+					</div>
+					<div class="col-span-2 w-64 flex items-center justify-center">
+						<div class="sm:grid grid-cols-2 gap-10 hidden">
+
+							<div class="flex items-start justify-center w-24">
+								<div class="flex items-center justify-center">
+									<nav class="">
+
+										<h3
+											class="text-white font-semibold text-left">
+											Popular Destinations</h3>
+										<ul class="text-gray-300 font-normal">
+											<li class="my-3">
+												<a href="#">Bogota</a>
+											</li>
+											<li class="my-3">
+												<a href="#">Cali</a>
+											</li>
+											<li class="my-3">
+												<a
+													href="#">Cartagena</a>
+											</li>
+											<li class="my-3">
+												<a href="#">Medellin</a>
+											</li>
+										</ul>
+
+									</nav>
+								</div>
+
+							</div>
+
+							<div class="items-start flex justify-center w-24">
+								<div>
+									<nav>
+										<h3 class="text-white font-bold">
+											Tags
+										</h3>
+
+										<ul class="text-gray-300 font-normal">
+											<li class="my-3">
+												<a href="#">Cities</a>
+											</li>
+											<li class="my-3">
+												<a href="#">3 Nights</a>
+											</li>
+											<li class="my-3">
+												<a href="#">5 Nights</a>
+											</li>
+											<li class="my-3">
+												<a href="#">
+													Popular
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="separator flex items-center justify-center my-4">
+				<hr size="" width="100%" color="white">
+
+			</div>
+			<div class="flex items-center justify-center">
+				<div class="text-white text-center">
+					<p>Powered by Jhonatan Castaño</p>
+					<p>Copyright© 2021. All Rights Reserved</p>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
 
 
 </body>
